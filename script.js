@@ -45,4 +45,46 @@ function contarLetras(texto)
     }
     console.log(a,b,c)
 
+  function validarPassword(password)
+    {
+        let cantidadLetras;
+        cantidadLetras=password.length;
+        let caracter = password.split("") 
+        let NumeroExiste = false;
+        for(let i = 0; i < cantidadLetras; i++)
+        {
+            if(!isNaN(caracter[i]))
+            {
+                NumeroExiste=true;
+            }
 
+        }
+
+        if(NumeroExiste && cantidadLetras>=8)
+            {return true}
+            else {return false}
+
+    }
+
+
+    function sumarArray(numeros)
+    {
+        let suma = 0;
+
+        for (let i = 0; i < numeros.length ; i++)
+        {
+            suma+= numeros[i];
+        }
+        
+        return suma;
+    }
+
+    function ej6(numeros)
+        {
+            let numeroMayor;
+            for(let i=0; i<numeros.length;i++)
+            {
+                if(numeros[i]>numeroMayor)
+            }
+            console.log(numeroMayor);
+        }
