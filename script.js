@@ -1,16 +1,15 @@
 
 //ej 1
 
-function formatearNombre(nombre)
+function formatearNombre()
 {
-    
+    let nombre= "CAMILA";
     let resultado;
     const primera = nombre[0].toUpperCase();
     const resto = nombre.slice(1).toLowerCase();
     resultado = primera + resto;
     console.log(resultado);
 }
-
 formatearNombre(nombre);
 
 function contarLetras(texto)
